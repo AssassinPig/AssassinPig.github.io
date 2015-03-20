@@ -17,4 +17,13 @@ function readTextFile(file)
 }
 
 $(document).ready(function(){
+    //md_content = readTextFile('https://github.com/AssassinPig/znotes/blob/master/markdown.md');
+    //$('.content').apppend(md_content);
+    $.ajax(
+            {
+                url:'https://raw.githubusercontent.com/AssassinPig/znotes/master/markdown.md'
+            }
+        ).done(function(content){
+            console.log('abc');
+        });
 });
