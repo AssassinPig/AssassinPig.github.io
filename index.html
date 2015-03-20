@@ -1,7 +1,208 @@
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="css/custom.css"> 
+  <script language="javascript" src="./js/jquery-2.1.3.min.js"></script>
+  <script language="javascript" src="./js/markdown.js"></script>
+  <script language="javascript" src="./js/custom.js"></script>
+	<title>ZResume</title>  
 </head>
 <body>
-<h1>hello world</h1>
+	<div class="main">
+		<div class="content">
+			<h1>个人简历</h1>
+			<hr>
+			<div class="section">
+				<h2>基本信息</h2>
+				<br>
+				<table>
+					<tr>
+						<th>Name:</th>
+						<td>zhufeng(邵珠峰)</td>
+					</tr>
+					<tr>
+						<th>Field:</th>
+						<td>web development/game programming/machine learning/AI</td>		
+					</tr>
+					<tr>
+						<th>QQ:</th>
+						<td>1544960182</td>
+					</tr>
+					<tr>
+						<th>mail</th>
+						<td>assassinpig@gmail.com</td>
+					</tr>
+					<tr>
+						<th>github:</th>
+						<td>
+							<a href="https://github.com/AssassinPig">https://github.com/AssassinPig</a>
+						</td>
+					</tr>
+					<tr>	
+						<th>home page:</th>
+						<td>
+							<a href="http://region8848-2nd.herokuapp.com/static_pages/about_me">http://region8848-2nd.herokuapp.com/static_pages/about_me
+							</a>
+						</td>					
+					</tr>
+				</table>			
+			</div><!-- end section-->
+
+			<div class="section">
+				<h2>工作经历</h2>
+					<br>
+					<table>
+						<tr>
+							<th>时间:</th>
+							<td>2008-2009(实习阶段)</td>
+						</tr>
+						<tr>
+							<th>公司:</th>
+							<td>福建某游戏公司</td>
+						</tr>
+						<tr>
+							<th>职位:</th>
+							<td>开发</td>
+						</tr>
+						<tr>
+							<th>主要工作内容:</th>
+							<td></td>
+						</tr>
+					</table>
+					<p class="p_work_content">
+							在windows mobile平台上使用stl,mfc进行应用软件的开发。
+							在项目初期，探索手机桌面插件系统的底层(手机桌面系统，就在没有开应用程序的状态都算是在桌面)。之后就是使用mfc进行上层的逻辑和UI的开发。
+					</p>
+			</div><!-- end section-->
+
+			<div class="section">
+				<br>
+					<table>
+						<tr>
+							<th>时间:</th>
+							<td>2009-2010</td>
+						</tr>
+						<tr>
+							<th>公司:</th>
+							<td>福建某游戏公司</td>
+						</tr>
+						<tr>
+							<th>职位:</th>
+							<td>客户端</td>
+						</tr>
+						<tr>
+							<th>主要工作内容:</th>
+							<td></td>
+						</tr>
+					</table>
+					<p class="p_work_content">
+							毕业之后进入了游戏公司，进行MMORPG的端游的开发，主要是探索引擎(Gamebryo), 地形编辑器(还有相应的工具)和一部分逻辑UI的工作。这里面最有意思并且也是最有挑战的是探索引擎，需要看引擎框架和demo来了解引擎如何使用，当然深入一点就是要理解引擎架构和运作的原理。地形编辑器使用wxdiget开发(跨平台的mfc), 感觉好的地方是使用一些设计模式，比如factory,command，observer之类，其他类似一般mfc写成的程序。逻辑都是cpp基本功，UI是flash的as3脚本。
+					</p>
+			</div><!-- end section-->
+
+			<div class="section">
+				<br>
+					<table>
+						<tr>
+							<th>时间:</th>
+							<td>2010-2011</td>
+						</tr>
+						<tr>
+							<th>公司:</th>
+							<td>上海某通讯公司</td>
+						</tr>
+						<tr>
+							<th>职位:</th>
+							<td>开发</td>
+						</tr>
+						<tr>
+							<th>主要工作内容:</th>
+							<td></td>
+						</tr>
+					</table>
+					<p class="p_work_content">
+							开发硬件在windows平台上的客户端软件，类似某手机助手。底层是串口通讯，开启两个线程，一个负责读取，一个负责写入。中上层都是mfc，拼界面和用户体验。
+					</p>
+			</div><!-- end section-->
+
+			<div class="section">
+				<br>
+					<table>
+						<tr>
+							<th>时间:</th>
+							<td>2011-2012</td>
+						</tr>
+						<tr>
+							<th>公司:</th>
+							<td>上海某网游公司</td>
+						</tr>
+						<tr>
+							<th>职位:</th>
+							<td>服务端</td>
+						</tr>
+						<tr>
+							<th>主要工作内容:</th>
+							<td></td>
+						</tr>
+					</table>
+					<p class="p_work_content">
+							在linux平台进行webgame(轻MMORPG+社交)和手机版的开发。搭建了一个手机版的后台server，后上线维护全版本的服务器。使用到的技术cpp，stl和boost，数据库使用了mysql。在开发过程中值得一提的是使用boost.serialization实现rpc机制和一个全服好友排名，其中好友排名的设计思路是让尽可能多最近登录用户的信息留在缓存服务器之中，比如登录的时候，用户信息就会被带到缓存之中，当你的朋友挑战了你之后需要你的信息时候就会直接从缓存中得到，否则去数据库中去查找取得。在上线之后开始接触数据统计和整理的工作，主要是使用python或php来从全服之中提取和统计数据，生成可现实网页。
+					</p>
+			</div><!-- end section-->
+
+			<div class="section">
+				<br>
+					<table>
+						<tr>
+							<th>时间:</th>
+							<td>2012-2013</td>
+						</tr>
+						<tr>
+							<th>公司:</th>
+							<td>上海某网游公司</td>
+						</tr>
+						<tr>
+							<th>职位:</th>
+							<td>服务端</td>
+						</tr>
+						<tr>
+							<th>主要工作内容:</th>
+							<td></td>
+						</tr>
+					</table>
+					<p class="p_work_content">
+							在linux平台进手游的MMORPG设计和开发。仍然使用cpp stl mysql等技术。值得一提的是实现了手机端的数据同步:具体方法是将用户数据分类，供后面更新时候使用。当有操作会影响到多个分类的数据时候，使用register注册待更新数据，发送操作消息和待更新数据的标记给服务器，随后等待消息返回，在所有消息返回的时候广播所有register的模块，以便整体更新。此外还有模拟客户端操作的测试程序。
+							对应游戏网站，内部工具网站的开发，使用ruby on rails。
+					</p>
+			</div><!-- end section-->
+
+			<div class="section">
+				<br>
+					<table>
+						<tr>
+							<th>时间:</th>
+							<td>2013-2014</td>
+						</tr>
+						<tr>
+							<th>公司:</th>
+							<td>个人和远程</td>
+						</tr>
+						<tr>
+							<th>职位:</th>
+							<td>全栈</td>
+						</tr>
+						<tr>
+							<th>主要工作内容:</th>
+							<td></td>
+						</tr>
+					</table>
+					<p class="p_work_content">
+							外包主要是针对web方面，以公司主页和特定客户(高校/图书馆/博物馆等)为主。
+							远程主要是某些公司主页的项目和现有网站的更新。
+					</p>
+			</div><!-- end section-->
+
+		</div>
+	</div>
 </body>
 </html>

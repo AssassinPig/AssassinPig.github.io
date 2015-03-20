@@ -1,0 +1,41 @@
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, big, cite, code, del, em, font, img, ins, small, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+margin: 0;
+padding: 0;
+}
+
+.main{
+	width: 100%;
+}
+
+.section {
+    margin: 28px 0px 0px 0px;
+}
+
+table, th, td {
+    border: 0px solid black;
+    border-collapse: collapse;
+}
+
+th {
+	padding: 5px;
+    text-align: left;
+	font-weight: normal;
+	width:180px
+}
+
+td {
+    padding: 5px;
+    text-align: left;
+}
+
+.content {
+    margin: 40px auto;
+    position: relative;
+    width: 960px;
+}
+
+p.p_work_content {
+    padding: 10px 5px 0px 0px;
+    text-indent: 40px;
+    line-height: 25px;
+}
