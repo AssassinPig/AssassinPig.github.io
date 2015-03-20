@@ -19,6 +19,15 @@ function readTextFile(file)
 $(document).ready(function(){
     //md_content = readTextFile('https://github.com/AssassinPig/znotes/blob/master/markdown.md');
     //$('.content').apppend(md_content);
+    /*
+    $.get(
+            //'https://raw.githubusercontent.com/AssassinPig/znotes/master/markdown.md', function(data){
+            'http://www.baidu.com', function(data){
+                console.log('get ok');
+            }
+        );
+    */
+    /*
     $.ajax(
             {
                 url:'https://raw.githubusercontent.com/AssassinPig/znotes/master/markdown.md'
@@ -26,4 +35,10 @@ $(document).ready(function(){
         ).done(function(content){
             console.log('abc');
         });
+    */
+    $('.content').load('https://raw.githubusercontent.com/AssassinPig/znotes/master/markdown.md',
+        function(response, status, xhr){
+        //console.log('load ok');
+        console.log(response);
+    });
 });
