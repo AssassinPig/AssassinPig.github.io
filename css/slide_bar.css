@@ -1,0 +1,42 @@
+.photo_bar {
+    height:300px;
+    width:640px;
+    border: solid 1px #000000;
+    overflow: hidden;
+}
+
+#photo_ul {
+    top:0px;
+    height:100%;
+    width:2560px;
+    list-style: none;
+    position: relative;
+    padding:0px;
+    margin: 0px;
+}
+
+#photo_ul li {
+    float: left;
+    position: relative;
+}
+
+#number_ul {
+    list-style: none;
+    position: relative;
+}
+
+#number_ul li {
+    float: left;
+    position: relative;
+    background-color: #dfdfdf;
+    padding: 10px;
+    margin: 4px;
+}
+
+.number_bar {
+    float: left;
+    margin-bottom: 10px;
+    z-index: 99;
+    position: relative;
+    top: -70px;
+    left: 380px;

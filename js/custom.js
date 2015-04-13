@@ -1,29 +1,23 @@
-function readTextFile(file)
-{
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
+!function($){
+    function readTextFile(file)
     {
-        if(rawFile.readyState === 4)
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function ()
         {
-            if(rawFile.status === 200 || rawFile.status == 0)
+            if(rawFile.readyState === 4)
             {
-                var allText = rawFile.responseText;
-                alert(allText);
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var allText = rawFile.responseText;
+                    alert(allText);
+                }
             }
         }
+        rawFile.send(null);
     }
-    rawFile.send(null);
-}
 
-$(document).ready(function(){
-    /*
-    $.ajax(
-            {
-                url:'https://raw.githubusercontent.com/AssassinPig/znotes/master/markdown.md'
-            }
-        ).done(function(content){
-            console.log('abc');
-        });   
-    */
-});
+    $(document).ready(function(){
+        //console.log('ready');
+    });
+}(jQuery);

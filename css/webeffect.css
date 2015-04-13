@@ -1,0 +1,33 @@
+#effect_list {
+    list-style: none;
+    padding: 3px 30px;
+}
+
+#effect_list li {
+    margin-top: 20px;
+}
+
+#effect_elem_list {
+    list-style: none;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+#effect_elem_list li{
+    margin-top: 15px;
+    width: 200px;
+    height: 24px;
+}
+
+.elem_progress {
+    height: 3px;
+    width: 0px;
+    background-color: blue;
+    display: none;
+    margin-top:2px;
+}
+
+a{
+    outline-style:none;
+    text-decoration:none;
+}
