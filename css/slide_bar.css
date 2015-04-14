@@ -1,11 +1,11 @@
 .photo_bar {
     height:300px;
     width:640px;
-    border: solid 1px #000000;
     overflow: hidden;
+    margin: 0 auto;
 }
 
-#photo_ul {
+.photo_ul {
     top:0px;
     height:100%;
     width:2560px;
@@ -15,28 +15,118 @@
     margin: 0px;
 }
 
-#photo_ul li {
+.photo_ul li {
     float: left;
     position: relative;
 }
 
-#number_ul {
+.number_ul {
     list-style: none;
     position: relative;
 }
 
-#number_ul li {
+.number_ul_li {
     float: left;
     position: relative;
-    background-color: #dfdfdf;
-    padding: 10px;
+    background-color: #fcf2cf;
+    padding: 5px;
     margin: 4px;
+    color:#d94b01;
+    border: solid 1px #f47500;
 }
 
 .number_bar {
-    float: left;
-    margin-bottom: 10px;
-    z-index: 99;
     position: relative;
     top: -70px;
-    left: 380px;
+    left: 480px;
+}
+
+.photo_bar_prev {
+  position: absolute;
+  left: 163px;
+  top: 230px;
+  
+  cursor: pointer;
+  width: 20px;
+  height: 30px;
+  outline: 0;
+  background: url(../photo/T1mC4TXfpqXXXXXXXX-56-210.png) no-repeat -22px -2px;
+}
+
+.photo_bar_next {
+  position: absolute;
+  left: 778px;
+  top: 230px;
+
+  cursor: pointer;
+  width: 20px;
+  height: 30px;
+  outline: 0;
+  background: url(../photo/T1mC4TXfpqXXXXXXXX-56-210.png) no-repeat -2px -2px;
+  z-index: 99;
+}
+
+.number_bar_active{
+    background-color: #d94b01;
+    color: #fcf2cf;
+}
+
+.number_bar_unactive{
+    background-color: #fcf2cf;
+    color: #d94b01;
+}
+
+.photo_bar_y {
+    height:300px;
+    width:640px;
+    overflow: hidden;
+    margin: 0 auto;   
+}
+
+.photo_ul_y {
+    top:0px;
+    height:1200px;
+    width:100%;
+    list-style: none;
+    position: relative;
+    padding:0px;
+    margin: 0px;
+}
+
+.photo_ul_y li {
+    position: relative;
+}
+
+.number_bar_y {
+    position: relative;
+    top: -950px;
+    left: 480px;
+}
+
+.photo_bar_fade {
+    height:300px;
+    width:640px;
+    //overflow: hidden;
+    margin: 0 auto;   
+}
+
+.photo_ul_fade {
+    top:0px;
+    height:300px;
+    width:100%;
+    list-style: none;
+    position: relative;
+    padding:0px;
+    margin: 0px;
+}
+
+.photo_ul_fade li {
+    position: relative;
+}
+
+.number_bar_fade {
+    position: relative;
+    top: -70px;
+    left: 480px;
+    z-index: 999;
+}
