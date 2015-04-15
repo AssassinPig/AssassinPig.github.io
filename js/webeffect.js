@@ -24,7 +24,7 @@
             xhr.onreadystatechange = function() {
 
                 var readyState = xhr.readyState;
-                console.log(xhr.readyState);
+                //console.log(xhr.readyState);
                 if (readyState == 1) {
                     var elem_progress = click_one.children('.elem_progress');
                     var width = 100;
@@ -56,7 +56,7 @@
                         { 'width': '+='+width+'px' },
                         100,
                         function(){
-                            var url = click_one.children('a').attr('href');
+                            var url = click_one.children('.effect_elem').attr('href');
                             location.href = url;
                         }
                     );
@@ -67,7 +67,7 @@
 
         $("#effect_elem_list li").click(function() {
             click_one = $(this);
-            var url = click_one.children('a').attr('href');
+            var url = click_one.attr('href');
             $.ajax({
                 url: url,
                 error: function() {

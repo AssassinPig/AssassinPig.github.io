@@ -17,6 +17,18 @@
     margin-top: 15px;
     width: 200px;
     height: 24px;
+    border-left:solid 3px #dfdfdf;    
+}
+
+#effect_elem_list li:hover{
+    border-left:solid 3px #dfdfdf;    
+    border-right:solid 3px #dfdfdf;    
+    cursor: pointer;
+}
+
+.effect_elem{
+    height: 20px;
+    width: 100%;
 }
 
 .elem_progress {

@@ -1,0 +1,50 @@
+.scroll_bar {
+	height: 580px;
+	width: 960px;
+	overflow:hidden;
+}
+
+.scroll_bar ul {
+	margin:0 auto;
+	position: relative;
+	width:960px;
+}
+
+.scroll_bar ul li {
+	margin:0 auto;
+	position:absolute;
+}
+
+.scroll_bar img
+{
+	height:100%;
+	vertical-align:top;
+	width:100%;
+}
+
+.scroll_bar_switcher {
+	margin: 500px auto auto auto;
+	position: relative;
+	width: 200px;
+}
+
+.scroll_bar_switcher span{
+	border: solid 2px #ffffff;
+	background-color: #dfdfdf;
+	padding: 4px 6px 4px 6px;
+	display: inline-block;
+	float: left;
+	margin-left: 20px;
+	border-radius: 10px;
+	color: #ffffff;
+	width: 50px;
+	height: 30px;
+	text-align: center;
+	line-height: 1.8em;
+}
+
+.scroll_bar_switcher span:hover {
+	background-color: #dfdfdf;
+	color: #000000;
+	cursor: pointer;
+}
