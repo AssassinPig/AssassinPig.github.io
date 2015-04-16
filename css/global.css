@@ -4,12 +4,13 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, ad
     border: 0;
 }
 body {
-    margin:0; background:#fff;
+    margin:0; 
+    background:#fff;
     color:#333;
     font:Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
 }
 
-html, body { height:100%; }
+html, body{ height:100%; }
 
 ol,ul{ list-style:none }
 

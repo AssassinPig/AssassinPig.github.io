@@ -1,0 +1,62 @@
+.goods_zoom {
+	height: 420px;	
+}
+
+.main_pic {
+	overflow: hidden;
+	height: 360px;
+	width: 360px;
+	border: solid 1px black;
+	float: left;
+}
+
+.main_pic:hover {
+	cursor: crosshair;
+}
+
+.pic_bar {
+	height: 55px;
+	clear: left;
+	float: left;
+}
+
+.pic_bar .pic_list {
+	display: inline;
+	list-style: none;
+}
+
+.pic_bar .pic_list li{
+	display: list-item;
+	float: left;
+}
+
+.pic_list_hover {
+	border: 2px solid #ff0000;
+}
+
+.zoom_pic {
+	overflow: hidden;
+	border: 1px solid #000000;
+	display: none;
+	z-index: 1000;
+	width: 380px;
+	height: 380px;
+	position: absolute;
+	left: 380px;
+	float: left;
+}
+
+.zoom_pic img{
+	position: relative;
+}
+
+.scale_frame {
+	position: relative;
+	border: 1px solid #ff0000;
+	background-color: #bf0000;
+	opacity: 0.5;
+	height: 150px;
+	width: 150px;
+	z-index: 1000;
+	display: none;
+}
