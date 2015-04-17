@@ -1,0 +1,96 @@
+.section ul li {
+	margin-top: 10px;
+}
+
+.search_dlg_small {
+	height: 32px;
+	width: 240px;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+
+
+.search_dlg_small input[type=text] {
+  margin-left: 2px;
+  width: 160px;
+  display: block;
+  float: left;
+  height: 24px;
+  margin-top: 2px;
+  outline: 0;
+  border: solid 1px #FF4200;
+}
+
+.search_dlg_small input[type=submit] {
+  width: 76px;
+  border: solid 1px #FF4200;
+  display: block;
+  color: #f7f7f7;
+  background-color: #FF4200;
+  text-align: center;
+  height: 30px;
+  cursor: pointer;
+}
+
+.search_dlg_medium {
+  height: 32px;
+  width: 480px;	
+}
+
+.search_dlg_large {
+  height: 48px;
+  width: 720px;
+}
+
+.search_dlg {
+	background-color: #FF4200;	
+}
+
+.search_dlg_medium input[type=text] {
+  margin-left: 2px;
+  width: 360px;
+  display: block;
+  float: left;
+  height: 24px;
+  margin-top: 2px;
+  outline: 0;
+  border: solid 1px #FF4200;
+  font-size: 20px;
+}
+
+.search_dlg_medium input[type=submit] {
+  width: 116px;
+  border: solid 1px #FF4200;
+  display: block;
+  color: #f7f7f7;
+  background-color: #FF4200;
+  text-align: center;
+  height: 30px;
+  cursor: pointer;
+}
+
+.search_dlg_large input[type=text] {
+  margin-left: 2px;
+  width: 600px;
+  display: block;
+  float: left;
+  height: 40px;
+  margin-top: 2px;
+  outline: 0;
+  border: solid 1px #FF4200;
+  font-size: 22px;
+  /* line-height: 20px; */
+}
+
+.search_dlg_large input[type=submit] {
+  width: 114px;
+  border: solid 1px #FF4200;
+  display: block;
+  color: #f7f7f7;
+  background-color: #FF4200;
+  text-align: center;
+  height: 44px;
+  cursor: pointer;
+  font-size: 24px;
+}
