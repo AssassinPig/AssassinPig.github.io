@@ -1,0 +1,17 @@
+.mymenu ul li {
+	width: 96px;
+	height: 42px;
+	float: left;
+	background-color: #E64346;
+	color: #fff;
+  	font: 700 15px/40px "microsoft yahei";
+  	text-align: center;
+  	margin-right: solid 1px #fff;
+  	cursor: pointer;
+}
+
+.mymenu ul li:hover {
+	background-color: #fff;
+	color: #E64346;
+	cursor: pointer;
+}
