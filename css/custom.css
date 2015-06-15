@@ -3,7 +3,7 @@
 }
 
 .section {
-    margin: 28px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
 }
 
 table, th, td {
@@ -29,13 +29,11 @@ td {
     width: 960px;
 }
 
-p.p_work_content {
-    padding: 10px 5px 0px 0px;
-    text-indent: 40px;
-    line-height: 25px;
+.work_content{
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
-
-.section {
-    margin-top: 50px;
+.work_content ul li{
+    margin-top: 5px;
 }
